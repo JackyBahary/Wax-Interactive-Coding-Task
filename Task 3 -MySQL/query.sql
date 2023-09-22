@@ -59,6 +59,3 @@ LEFT JOIN ATTRIBUTES legs
 LEFT JOIN ATTRIBUTES class
   ON ANIMALS.id = class.animal_id
   AND class.attribute = 'Class'
-
-
-
