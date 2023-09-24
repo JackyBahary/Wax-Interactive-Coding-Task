@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wax-Interactive Task-Frontend</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+</head>
+<header>
+    <div class="header-content">
+        <img class="header-content__item" src="./assets/wax-logo-white.png" alt="Wax Interactive Logo">
+        <div class="header-content__item header-content--line-break">
+            |
+        </div>
+        <div class="header-content__item">
+            Development
+        </div>
+    </div>
+</header>
+<body>
+    <div class="body-content">
+        <div class="body-content--profile">
+            <div class="body-content--img">
+                <img src="./assets/face.jpg" alt="Josh Collins">
+            </div>
+            By Josh Collins
+        </div>
+            <br>
+            We craft technology solutions, with passion!
+            <br>
+            <br>
+            Our extensive experience across the ever changing digital landscape provides us with the knowledge to create custom digital solutions that give businesses the competitive edge.
+            <br>
+            <br>
+            <span id="more">
+                We work with companies to design an application that gives them a professional brand presence, streamlines and automates their processes and integrates the right tools to get the platform working directly for the business.
+                <br>
+                <br>
+                Our services extend to motion graphic design and video editing, integration and management of webinars, virtual and augmented reality and interactive experiences.
+                <br>
+                <br>
+            </span>   
+        <button onclick="myFunction()" class="body-content--button">
+            Read more
+        </button>
+    </div>
+
+    <script>
+        function myFunction() {
+          var moreText = document.getElementById("more");
+          var btnText = document.getElementsByClassName("body-content--button")[0];
+          console.log(btnText);
+        
+          if (moreText.style.display === "inline") {
+            btnText.innerHTML = "Read more"; 
+            moreText.style.display = "none";
+          } 
+          else {
+            btnText.innerHTML = "Read less"; 
+            moreText.style.display = "inline";
+          }
+        }
+    </script>
+</body>
+</html>
